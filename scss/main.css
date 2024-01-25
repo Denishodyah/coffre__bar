@@ -1,0 +1,111 @@
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(56, 56, 56);
+  color: rgb(255, 255, 255);
+  font-size: clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem);
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.coffe-house {
+  min-height: 290px;
+}
+.coffe-house .coffe-house__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 88px;
+}
+.coffe-house .coffe-house__box .box1__title {
+  color: rgb(255, 153, 0);
+  font-family: "Amatic SC", sans-serif;
+  font-size: clamp(1.563rem, 0.994rem + 2.84vw, 3.125rem);
+  font-weight: 400;
+}
+.coffe-house .coffe-house__box .box1__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.063rem, 1.313rem + 3.75vw, 4.125rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+}
+.coffe-house .coffe-house__box .box1__text {
+  max-width: 514px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem);
+  font-weight: 400;
+  margin-bottom: 67px;
+}
+.coffe-house .coffe-house__box .box2 {
+  position: relative;
+  top: 0;
+}
+.coffe-house .coffe-house__box .box2__img {
+  position: absolute;
+  right: 230px;
+  bottom: 0px;
+  margin-bottom: 33px;
+}
+@media screen and (min-width: 370px) and (max-width: 840px) {
+  .coffe-house .coffe-house__box .box2__img2 {
+    margin-bottom: 27px;
+  }
+}
+.coffe-house .coffe-house__box .coffe-house__item {
+  display: flex;
+  gap: 92px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 370px) and (max-width: 840px) {
+  .coffe-house .coffe-house__box .coffe-house__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+}
+.coffe-house .coffe-house__box .coffe-house__item__text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+}
+.coffe-house .coffe-house__box .coffe-house__item .coffe-house__num {
+  color: rgb(255, 153, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.fon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,11 @@
+body {
+    font-family: $font-main;
+    background-color: $body-fon;
+    color: $white;
+    font-size: clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem);  //font-size: min 12px - max 24px
+}
+.container {
+max-width: 1380px;
+margin: 0 auto;
+padding: 0 20px;
+}

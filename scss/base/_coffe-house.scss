@@ -1,0 +1,74 @@
+.coffe-house {
+    min-height: 290px;
+
+.coffe-house__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 88px;
+
+.box1 {
+    &__title {
+        color: $accent;
+        font-family: $font-accent;
+        font-size: clamp(1.563rem, 0.994rem + 2.84vw, 3.125rem);   // min 25px max 50px
+        font-weight: 400;
+    }
+    &__subtitle { 
+        font-family: $font-main;
+        font-size: clamp(2.063rem, 1.313rem + 3.75vw, 4.125rem);  // min 33px max 66px
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: $white;
+    }
+    &__text {
+        max-width: 514px;
+        font-family: $font-main;
+        color: $white;
+        font-size:clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem); //min12px  max 24px
+        font-weight: 400;
+        margin-bottom: 67px;
+    }
+}
+.box2 {
+    position: relative;
+    top: 0;
+    &__img {
+        position: absolute;
+    right: 230px;
+    bottom: 0px;
+    margin-bottom: 33px;
+    }
+    &__img2 {
+        @media screen and (min-width: 370px) and (max-width: 840px) {
+        margin-bottom: 27px;
+        }
+    }
+}
+.coffe-house__item {
+    display: flex;
+    gap: 92px;
+    margin-bottom: 50px;
+    @media screen and (min-width: 370px) and (max-width: 840px) {
+        display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+        
+    }
+    &__text {
+        color: #FFF;
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+    }
+    .coffe-house__num{
+        color: $accent;
+        font-family: $font-main;
+        font-size:clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem); //min12px max24px
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+}
+}
